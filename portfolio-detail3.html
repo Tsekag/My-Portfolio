@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio Details - EasyFolio Bootstrap Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- Custom CSS for Video -->
+    <style>
+      .portfolio-video {
+        border-radius: 15px;
+        overflow: hidden;
+        margin-top: 20px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      }
+      .portfolio-video video {
+        width: 100%;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+
+  <body class="portfolio-details-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">MyFolio</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title">
+        <div class="breadcrumbs">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#"><i class="bi bi-house"></i> Home</a>
+              </li>
+              <li class="breadcrumb-item"><a href="#">Category</a></li>
+              <li class="breadcrumb-item active current">Portfolio Details</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="title-wrapper">
+          <h1>Portfolio Details</h1>
+          <p>
+            Here’s a look at the projects I’ve worked on—what I built, how I
+            built it, and the challenges I tackled along the way. From
+            brainstorming ideas to bringing them to life, this section gives you
+            a peek into my creative process, the tools I used, and the lessons I
+            learned. Check them out!
+          </p>
+        </div>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Portfolio Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4 g-lg-5">
+            <div class="col-lg-6">
+              <div class="position-sticky" style="top: 40px">
+                <div class="portfolio-description">
+                  <h2>Mashup_Game for fun</h2>
+                  <p>
+                    The Mashup Game Website is a full-stack web application that blends creativity and technology,
+                    built with React (TypeScript) on the frontend and Node.js with Express on the backend. It allows
+                    users to log in securely using JWT authentication, choose game genres, and generate unique character
+                    mashups through an animated spinning wheel. Players can view their results on interactive 3D cards, 
+                    upload their mashup artworks, and showcase them in a community gallery where others can like and comment.
+                    The system also includes a personalized dashboard for users to manage their profiles and view their statistics.
+                  </p>
+                  <p>
+                   Technically, the project demonstrates advanced React hooks usage such as useState, useEffect, useContext, 
+                    and useRef for state, side-effects, global context, and performance optimization. It connects to a MySQL 
+                    database through XAMPP and handles secure data flow with bcryptjs for password hashing and Multer for file 
+                    uploads. With its structured backend, real-world authentication flow, and responsive Tailwind CSS design,
+                    this project serves as a practical learning example for mastering full-stack React development and
+                    understanding how frontend and backend interact in a production-style environment.
+                  </p>
+
+                  <!-- VIDEO DEMO -->
+                  <div class="portfolio-video">
+                    <video controls autoplay muted loop playsinline>
+                      <source src="assets/video/Video Project 1.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span
+                        >"Hey, you’ve learned a lot working on this, which is awesome! But I think it would be
+                    even better if you tried using MongoDB or another database, deployed the backend on Render 
+                    (or something similar), and made the React app connect to a cloud-based database—basically 
+                    bringing the whole project fully online and live."</span >
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                    <div>
+                      <img
+                        src="assets/img/person/photo_2025-10-23_12-08-44.jpg" 
+                        class="testimonial-img"
+                        alt=""
+                      />
+                      <h3>Ms.Wicked</h3>
+                      <h4>A Textile Engineer Student</h4>
+                    </div>
+                  </div>
+
+                  <p>I faced some challenges in aligning the design with my vision, 
+                     but through persistence and consistency, I was able to create a 
+                     dynamic genre character system. This system allows characters to 
+                     change through the admin panel, similar to how a restaurant menu 
+                     can be updated, making the application interactive rather than static. 
+                     The project taught me a great deal about Node.js, managing CRUD operations, 
+                     and handling data through an admin interface to make the application more 
+                     dynamic and user-friendly.
+                  </p>
+                </div>
+
+                <div class="portfolio-info mt-5">
+                  <h3>Project information</h3>
+                  <ul>
+                    <li><strong>Category</strong> Web design</li>
+                    <li><strong>Mentor</strong> Mr.Ephrem</li>
+                    <li><strong>Project Submission</strong> 23 Oct, 2025</li>
+                    <li>
+                      <strong>Project URL</strong>
+                      <a href="https://project-1-xi-kohl.vercel.app/">https://project-1-xi-kohl.vercel.app/</a>
+                    </li>
+                    <li>
+                      <a href="">Visit Website</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Details Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">MyFolio</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
