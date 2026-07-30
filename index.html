@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tsega Kagnew — Portfolio</title>
+    <meta name="description" content="Web developer portfolio of Tsega Kagnew — building interactive, creative digital experiences." />
+    <meta name="keywords" content="portfolio, web developer, Tsega, frontend, design" />
+
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+      })();
+    </script>
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <span class="logo-mark">TK</span>
+          <span class="logo-name">Tsega Kagnew</span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#about" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-actions d-flex align-items-center">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Switch theme">
+            <i class="bi bi-sun-fill theme-icon-light"></i>
+            <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+          </button>
+          <a href="#contact" class="btn btn-talk d-none d-lg-inline-flex">Let's Talk</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- About Section (Hero) -->
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+              <div class="about-portrait">
+                <div class="portrait-ring"></div>
+                <div class="portrait-deco portrait-deco-tl"></div>
+                <div class="portrait-deco portrait-deco-br"></div>
+                <div class="portrait-frame">
+                  <img
+                    src="assets\img\profile\kuki-grumpy.png"
+                    alt="Tsega Kagnew — profile"
+                    class="portrait-img"
+                    width="400"
+                    height="400"
+                    loading="eager"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-content">
+                <span class="section-badge">About Me</span>
+                <h1 class="about-headline">
+                  Building websites that make a <span class="text-accent">lasting impression</span> on your audience
+                </h1>
+                <p class="about-lead">
+                  Hi! I'm Tsega — a third-year computer science student exploring web development and creative digital art. I learn by doing, turning ideas into interactive, user-friendly experiences one project at a time.
+                </p>
+
+                <div class="personal-info">
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <div class="info-item">
+                        <span class="label">Name</span>
+                        <span class="value">Tsega Kagnew</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="info-item">
+                        <span class="label">Phone</span>
+                        <span class="value">+251 904630047</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="info-item">
+                        <span class="label">Email</span>
+                        <span class="value">kagtsega@gmail.com</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="info-item">
+                        <span class="label">GitHub</span>
+                        <span class="value">@Tsekag</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-cta">
+                  <a href="#contact" class="btn btn-primary">Contact me</a>
+                  <a href="https://github.com/Tsekag" class="btn btn-outline" target="_blank" rel="noopener">View GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Work Skills Section -->
+      <section id="skills" class="skills section">
+        <div class="container" data-aos="fade-up">
+          <div class="section-heading text-center">
+            <h2>My Work <span class="text-accent">Skills</span></h2>
+            <p>From structuring clean HTML to building interactive apps — here are the tools and technologies I'm growing with every day.</p>
+          </div>
+
+          <div class="row g-4 skills-animation">
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-box">
+                <div class="skill-icon"><i class="bi bi-filetype-html"></i></div>
+                <h3>HTML</h3>
+                <span class="skill-pct">80%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+              <div class="skill-box">
+                <div class="skill-icon"><i class="bi bi-filetype-css"></i></div>
+                <h3>CSS</h3>
+                <span class="skill-pct">45%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div></div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="skill-box">
+                <div class="skill-icon"><i class="bi bi-filetype-js"></i></div>
+                <h3>JavaScript</h3>
+                <span class="skill-pct">25%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+              <div class="skill-box">
+                <div class="skill-icon"><i class="bi bi-bootstrap"></i></div>
+                <h3>Bootstrap</h3>
+                <span class="skill-pct">70%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="skill-box">
+                <div class="skill-icon"><i class="bi bi-palette"></i></div>
+                <h3>Digital Art</h3>
+                <span class="skill-pct">55%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+              <div class="skill-box">
+                <div class="skill-icon"><i class="bi bi-braces"></i></div>
+                <h3>React</h3>
+                <span class="skill-pct">30%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div></div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <div class="skill-box">
+                <div class="skill-icon"><i class="bi bi-server"></i></div>
+                <h3>Node.js</h3>
+                <span class="skill-pct">20%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div></div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="450">
+              <div class="skill-box">
+                <div class="skill-icon"><i class="bi bi-git"></i></div>
+                <h3>Git</h3>
+                <span class="skill-pct">60%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container" data-aos="fade-up">
+          <div class="section-heading text-center">
+            <h2>My <span class="text-accent">Portfolio</span></h2>
+            <p>Crafting ideas into code — here's what I've built so far.</p>
+          </div>
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="100">
+              <ul class="portfolio-filters isotope-filters">
+                <li data-filter="*" class="filter-active">All Work</li>
+                <li data-filter=".filter-web">Web Design</li>
+                <li data-filter=".filter-graphics">Graphics And Art</li>
+                <li data-filter=".filter-motion">Cybersecurity</li>
+                <li data-filter=".filter-brand">Animation</li>
+              </ul>
+            </div>
+
+            <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img src="assets/img/portfolio/Screenshot (323).png" class="img-fluid" alt="Netflix Landing page" loading="lazy" />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a href="assets/img/portfolio/Screenshot (323).png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                        <a href="https://github.com/Tsekag/Project-2.git" class="github-link" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                        <a href="portfolio-detail2.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <span class="category">Web Design</span>
+                    <h3>Netflix Landing page</h3>
+                    <p>Built with HTML, CSS, JavaScript and Bootstrap.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img src="assets/img/portfolio/Screenshot (322).png" class="img-fluid" alt="Google Meeting Landing page" loading="lazy" />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a href="assets/img/portfolio/Screenshot (322).png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                        <a href="https://github.com/Tsekag/Project-1.git" class="github-link" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                        <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <span class="category">Web Design</span>
+                    <h3>Google Meeting Landing page</h3>
+                    <p>HTML, CSS and media queries for responsivity.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img src="assets/img/portfolio/Genre Select.png" class="img-fluid" alt="Mashup game" loading="lazy" />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a href="assets/img/portfolio/Genre Select.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                        <a href="https://github.com/Tsekag/Mash-With-Me.git" class="github-link" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                        <a href="portfolio-detail3.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <span class="category">Web Design</span>
+                    <h3>Mashup Game</h3>
+                    <p>Node (Express.js) backend with React and Tailwind frontend.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+                <div class="portfolio-card">
+                  <div class="portfolio-image portfolio-placeholder">
+                    <div class="placeholder-inner"><i class="bi bi-palette"></i><span>Coming soon</span></div>
+                  </div>
+                  <div class="portfolio-content">
+                    <span class="category">Graphics</span>
+                    <h3>Creative Work</h3>
+                    <p>Soon to be added.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section">
+        <div class="container" data-aos="fade-up">
+          <div class="section-heading text-center">
+            <h2>What My <span class="text-accent">Clients Say</span></h2>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>She is a natural leader — persuasive, perseverant, and never backs down from a challenge. Her humility and collaborative spirit make her a true inspiration to work with.</p>
+                <div class="testimonial-author">
+                  <img src="assets/img/person/image-removebg-preview (4).png" alt="Spongy Goodman" loading="lazy" />
+                  <div>
+                    <h4>Spongy Goodman</h4>
+                    <span>Electrical Engineer &amp; Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>As a passionate beginner, every project is a learning experience. I thrive on problem-solving, creativity, and continuous improvement in the tech world.</p>
+                <div class="testimonial-author">
+                  <img src="assets/img/person/image-removebg-preview (6).png" alt="Tsega" loading="lazy" />
+                  <div>
+                    <h4>Tsega</h4>
+                    <span>Student &amp; Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>Her dedication to learning is inspiring. She takes time to master concepts, sees things through, and thrives in collaborative environments with fearless curiosity.</p>
+                <div class="testimonial-author">
+                  <img src="assets/img/person/image-removebg-preview (2).png" alt="Mr.Piseces" loading="lazy" />
+                  <div>
+                    <h4>Mr.Piseces</h4>
+                    <span>Group Member</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <div class="container" data-aos="fade-up">
+          <div class="section-heading text-center mb-5">
+            <h2>Get In <span class="text-accent">Touch</span></h2>
+            <p>Got a project idea or just want to say hi? Let's create something awesome together.</p>
+          </div>
+
+          <div class="row g-5">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+              <div class="contact-info-block">
+                <div class="info-item">
+                  <i class="bi bi-envelope-at"></i>
+                  <div>
+                    <span class="label">Email</span>
+                    <span class="value">kagtsega@gmail.com</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-telephone"></i>
+                  <div>
+                    <span class="label">Phone</span>
+                    <span class="value">+251 904630047</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <div>
+                    <span class="label">Location</span>
+                    <span class="value">Ethiopia, AA, Akaki Kality 08</span>
+                  </div>
+                </div>
+                <a href="https://maps.google.com/?q=Akaki+Kality+08+Addis+Ababa+Ethiopia" class="map-link" target="_blank" rel="noopener">
+                  Open Map <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+              <div class="contact-form card">
+                <div class="card-body p-4 p-lg-5">
+                  <form action="forms/contact.php" method="post" class="php-email-form">
+                    <div class="row gy-4">
+                      <div class="col-12">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+                      </div>
+                      <div class="col-12">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required />
+                      </div>
+                      <div class="col-12">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required />
+                      </div>
+                      <div class="col-12">
+                        <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                      </div>
+                      <div class="col-12 text-center">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                        <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row g-4 footer-top">
+          <div class="col-lg-4 col-md-6">
+            <a href="index.html" class="footer-logo d-flex align-items-center mb-3">
+              <span class="logo-mark">TK</span>
+              <span class="logo-name">Tsega</span>
+            </a>
+            <p class="footer-about">A beginner web developer passionate about turning ideas into interactive, user-friendly websites — always learning, always building.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5>Navigation</h5>
+            <ul class="footer-links">
+              <li><a href="#about">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact</h5>
+            <ul class="footer-contact">
+              <li><i class="bi bi-telephone"></i> +251 904630047</li>
+              <li><i class="bi bi-envelope"></i> kagtsega@gmail.com</li>
+              <li><i class="bi bi-geo-alt"></i> Akaki Kality 08, AA</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Get the latest information</h5>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email" aria-label="Email for newsletter" />
+                <button type="submit" class="btn newsletter-btn" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
+              </div>
+            </form>
+            <div class="footer-social mt-4">
+              <a href="https://github.com/Tsekag" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="mailto:kagtsega@gmail.com" aria-label="Email"><i class="bi bi-envelope-at"></i></a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <strong>Tsega Kagnew</strong> — All Rights Reserved</p>
+          <div class="footer-legal">
+            <a href="#">Terms &amp; Service</a>
+            <span>|</span>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
