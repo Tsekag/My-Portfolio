@@ -49,21 +49,8 @@
       height: auto;
       border-radius: 15px;
       display: block;
-    }
-    .portfolio-video-grid {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-    }
-    .portfolio-video-grid .portfolio-video {
-      flex: 1 1 0;
-      margin-top: 0;
-    }
-
-    @media (max-width: 767px) {
-      .portfolio-video-grid {
-        flex-direction: column;
-      }
+      max-width: 100%;
+      background: #000;
     }
   </style>
 </head>
@@ -128,18 +115,10 @@
                 <p>The Mashup Game Website is a full-stack web application with React and Node.js. Users can log in, choose genres, generate characters, and interact with a community gallery.</p>
                 
                 <!-- VIDEO DEMO -->
-                <div class="portfolio-video-grid">
-                  <div class="portfolio-video">
-                    <video controls preload="metadata" width="100%">
-                      <source src="assets/video/video-project-2.mp4" type="video/mp4">
-                    </video>
-                  </div>
-
-                  <div class="portfolio-video">
-                    <video controls preload="metadata" width="100%">
-                      <source src="assets/video/video-project-1.mp4" type="video/mp4">
-                    </video>
-                  </div>
+                <div class="portfolio-video">
+                  <video controls preload="metadata" playsinline webkit-playsinline poster="assets/img/portfolio/Genre Select.png" width="100%">
+                    <source src="assets/video/video-project-1.mp4" type="video/mp4">
+                  </video>
                 </div>
 
                 <div class="testimonial-item">
