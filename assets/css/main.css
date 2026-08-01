@@ -2477,6 +2477,35 @@ section,
   margin-top: 2rem;
 }
 
+.about-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.about-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  background: transparent;
+  transition: 0.3s ease;
+  box-shadow: 0 0 0 rgba(255, 127, 80, 0);
+}
+
+.about-socials a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 0 5px rgba(255, 127, 80, 0.14), 0 8px 20px rgba(255, 127, 80, 0.24);
+  background: rgba(255, 127, 80, 0.06);
+}
+
 .about-cta .btn,
 .btn-primary,
 .btn-see-all {
