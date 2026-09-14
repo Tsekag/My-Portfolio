@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Portfolio Details - EasyFolio Bootstrap Template</title>
+    <title>Google Meeting Landing Page — Portfolio Details</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -68,7 +68,7 @@
           <h1 class="sitename">MyFolio</h1>
         </a>
 
-        <nav id="navmenu" class="navmenu">
+        <nav id="navmenu" class="navmenu" aria-label="Main">
           <ul>
             <li><a href="index.html#hero">Home</a></li>
             <li><a href="index.html#about">About</a></li>
@@ -76,16 +76,18 @@
             <li><a href="index.html#skills">Skills</a></li>
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <div class="d-flex align-items-center">
+        <div class="header-actions d-flex align-items-center">
+          <button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Open menu" aria-controls="navmenu" aria-expanded="false">
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
           <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/night mode" title="Switch theme">
             <i class="bi bi-sun-fill theme-icon-light"></i>
             <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
           </button>
           <a href="index.html#contact" class="btn btn-talk d-none d-lg-inline-flex">Let's Talk</a>
-          <div class="header-social-links">
+          <div class="header-social-links d-none d-xl-flex">
             <a href="https://github.com/Tsekag" class="twitter" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
             <a href="mailto:kagtsega@gmail.com" class="facebook"><i class="bi bi-envelope-at"></i></a>
             <a href="https://www.linkedin.com" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
@@ -104,7 +106,7 @@
                 <a href="index.html"><i class="bi bi-house"></i> Home</a>
               </li>
               <li class="breadcrumb-item"><a href="index.html#portfolio">Portfolio</a></li>
-              <li class="breadcrumb-item active current">Netflix Landing Page</li>
+              <li class="breadcrumb-item active current">Google Meeting</li>
             </ol>
           </nav>
         </div>
@@ -125,37 +127,56 @@
             <div class="col-lg-6">
               <div class="position-sticky" style="top: 40px">
                 <div class="portfolio-description">
-                  <h2>Netflix Landing Page</h2>
+                  <h2>Google Meeting Landing Page</h2>
+                  <img src="assets/img/portfolio/Screenshot (322).png" class="img-fluid rounded mb-4" alt="Google Meeting landing page screenshot" />
                   <p>
-                    This was an individual project where I recreated the Netflix landing page using basic HTML, CSS, and Bootstrap. I aimed to design a clean and modern interface while maintaining responsiveness across different screen sizes. It was a challenging but rewarding experience as I pushed myself to improve my front-end skills.
-                </p>
+                    This was our first group project, completed by three members
+                    with minimal experience in web development. We created a
+                    landing page for Google Meet, focusing on building a
+                    responsive layout that adapts smoothly across a variety of
+                    devices. Our goal was to ensure a seamless user experience
+                    on desktops, tablets, and mobile devices using media
+                    queries.
                   </p>
                   <p>
-                    Since I worked on this alone, I relied on my understanding of Bootstrap’s grid system and CSS styling techniques to structure the page effectively. I also used **Bolt** for some guidance when I got stuck, but I made sure to implement most of the features by myself. The project helped me refine my approach to layout design, responsiveness, and UI consistency.
+                    Despite our limited experience, we successfully utilized
+                    HTML, CSS, and Bootstrap to design and implement the layout.
+                    We paid special attention to the responsiveness of the page,
+                    ensuring that the content was appropriately scaled and
+                    displayed based on different screen sizes. Using media
+                    queries, we were able to adjust the layout, typography, and
+                    button sizes to provide a consistent experience across all
+                    devices.
                   </p>
 
                   <div class="testimonial-item">
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
                       <span
-                        >It was a tiring project, but seeing the final result made all the effort worth it. Every challenge I faced helped me learn something new about Bootstrap and front-end development.</span
+                        >We faced some challenges in aligning the design with
+                        our vision, but through teamwork and experimentation, we
+                        managed to create a polished product. The project taught
+                        us a lot about responsive design and collaborating as a
+                        team.</span
                       >
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                     <div>
                       <img
-                        src="assets/img/profile/kuki-happy.png"
+                        src="assets/img/person/image-removebg-preview (4).png"
                         class="testimonial-img"
                         alt=""
                       />
-                      <h3>Tsega</h3>
-                      <h4>CS student n Yet to become Developer</h4>
+                      <h3>Spongy Goodman</h3>
+                      <h4>Electrical Enginneer n Developer</h4>
                     </div>
                   </div>
 
                   <p>
-                    Looking back, this project was a great learning experience. While I still have areas to improve, such as better structuring my CSS and optimizing responsiveness, I’m proud of what I accomplished. It gave me the confidence to tackle more advanced front-end projects in the future.
-                </p>
+                    Our success in this project encouraged us to continue
+                    exploring more advanced features of web development, such as
+                    JavaScript and interactive elements, to enhance the user
+                    experience further.
                   </p>
                 </div>
 
@@ -167,13 +188,13 @@
                     <li><strong>Project Submission</strong> 2 April, 2025</li>
                     <li>
                       <strong>Project URL</strong>
-                      <a href="https://project-2-topaz-rho.vercel.app/"
-                        >https://project-2-topaz-rho.vercel.app/</a
+                      <a href="https://project-1-xi-kohl.vercel.app/"
+                        >https://project-1-xi-kohl.vercel.app/</a
                       >
                     </li>
                     <li>
                       <a
-                        href="https://project-2-topaz-rho.vercel.app/"
+                        href="https://project-1-xi-kohl.vercel.app/"
                         class="btn-visit align-self-start"
                         >Visit Website</a
                       >

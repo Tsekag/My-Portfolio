@@ -40,7 +40,7 @@
           <span class="logo-name">Tsega Kagnew</span>
         </a>
 
-        <nav id="navmenu" class="navmenu">
+        <nav id="navmenu" class="navmenu" aria-label="Main">
           <ul>
             <li><a href="#about" class="active">Home</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -48,10 +48,12 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
         <div class="header-actions d-flex align-items-center">
+          <button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Open menu" aria-controls="navmenu" aria-expanded="false">
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
           <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Switch theme">
             <i class="bi bi-sun-fill theme-icon-light"></i>
             <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
@@ -243,7 +245,7 @@
                       <div class="portfolio-actions">
                         <a href="assets/img/portfolio/Screenshot (323).png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
                         <a href="https://github.com/Tsekag/Project-2.git" class="github-link" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
-                        <a href="portfolio-detail2.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                        <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                       </div>
                     </div>
                   </div>
