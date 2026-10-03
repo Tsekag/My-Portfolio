@@ -1,0 +1,3 @@
+# Keep video assets as regular files so they can be served directly by static hosts such as Vercel.
+# Git LFS was causing deploy-time pointer issues for this portfolio video.
+
