@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Creative Art Gallery — Tsega Kagnew</title>
+    <meta
+      name="description"
+      content="Interactive gallery of hand-drawn creative art — Ethiopian New Year, Halloween, Christmas, and more."
+    />
+
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/art-gallery.css" rel="stylesheet" />
+
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+      })();
+    </script>
+  </head>
+
+  <body class="art-gallery-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <span class="logo-mark">TK</span>
+          <span class="logo-name">Tsega Kagnew</span>
+        </a>
+
+        <nav id="navmenu" class="navmenu" aria-label="Main">
+          <ul>
+            <li><a href="index.html#about">Home</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions d-flex align-items-center">
+          <button
+            type="button"
+            class="mobile-nav-toggle d-xl-none"
+            aria-label="Open menu"
+            aria-controls="navmenu"
+            aria-expanded="false"
+          >
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle light/dark mode"
+            title="Switch theme"
+          >
+            <i class="bi bi-sun-fill theme-icon-light"></i>
+            <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+          </button>
+          <a href="index.html#contact" class="btn btn-talk d-none d-lg-inline-flex">Let's Talk</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="art-gallery-hero section">
+        <div class="container" data-aos="fade-up">
+          <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb justify-content-center mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="index.html#portfolio">Portfolio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Creative Art</li>
+            </ol>
+          </nav>
+
+          <span class="art-gallery-badge"><i class="bi bi-stars"></i> Graphics &amp; Art</span>
+          <h1 class="art-gallery-title">
+            My <span class="gradient-text">Creative Gallery</span>
+          </h1>
+          <p class="art-gallery-lead">
+            Hand-drawn pieces inspired by holidays and moments — Enkutatash, Halloween, Christmas, and
+            whatever I feel like sketching next. Spin through the ring, filter by event, and click the
+            center card to view full size.
+          </p>
+
+          <div class="art-gallery-controls-hint">
+            <span><i class="bi bi-arrow-left-right"></i> Arrow keys or buttons</span>
+            <span><i class="bi bi-mouse"></i> Scroll wheel</span>
+            <span><i class="bi bi-hand-index-thumb"></i> Drag the front card</span>
+          </div>
+
+          <div class="art-filter-bar" id="artFilterBar" role="tablist" aria-label="Filter by collection"></div>
+          <p class="art-collection-meta" id="artCollectionMeta" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="art-carousel-wrap" aria-label="Artwork carousel">
+        <div class="art-carousel-row container">
+          <button type="button" class="art-carousel-nav prev" id="artCarouselPrev" aria-label="Previous artwork">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <div class="art-carousel-scene" id="artCarouselScene">
+            <div class="art-carousel-ring" id="artCarouselRing"></div>
+          </div>
+          <button type="button" class="art-carousel-nav next" id="artCarouselNext" aria-label="Next artwork">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+        <div class="art-progress-dots" id="artProgressDots"></div>
+      </section>
+
+      <section class="container">
+        <div class="art-gallery-detail">
+          <span class="art-card-event" id="artDetailEvent">Ethiopian New Year</span>
+          <h3 id="artDetailTitle">New Year Couples</h3>
+          <p id="artDetailText">
+            Hand-drawn ink piece for Enkutatash — café scene with Adey Abeba flowers and playful details.
+          </p>
+          <div class="art-gallery-detail-actions">
+            <button type="button" class="art-btn art-btn-primary" id="artViewFull">
+              <i class="bi bi-arrows-fullscreen"></i> View full size
+            </button>
+            <a href="index.html#portfolio" class="art-btn art-btn-ghost">
+              <i class="bi bi-grid"></i> Back to portfolio
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span> <strong class="px-1 sitename">Tsega Kagnew</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/Tsekag" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+          <a href="mailto:kagtsega@gmail.com"><i class="bi bi-envelope-at"></i></a>
+          <a
+            href="https://www.linkedin.com/in/tsega-kagnew-5199b3351/?isSelfProfile=true"
+            target="_blank"
+            rel="noopener"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/art-gallery.js"></script>
+  </body>
+</html>
